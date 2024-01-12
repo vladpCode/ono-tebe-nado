@@ -1,1 +1,1 @@
-https://github.com/vladpCode/ono-tebe-nado.git
+https://github.com/vladpCode/ono-tebe-nado
