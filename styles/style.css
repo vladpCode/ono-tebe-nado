@@ -1,1 +1,348 @@
 /* место для вашего кода */
+
+header{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin: 92px 24px 0 24px;
+  font-size: 18px;
+}
+/*нижнее подчеркивание делаю ниже*/
+ a{
+  text-underline-offset: 4px;
+}
+/*настройка позиционирования и размеров списка меню*/
+.menu-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 391px;
+  height: 22px;
+}
+/*ширина двух пунктов меню как в фигме и измененный маркер списка*/
+.menu-list-item-decoration{
+  letter-spacing: 0.18px;
+  list-style: circle;
+}
+/*убрал маркер списка у первго элемента*/
+.menu-list-item-no-decoration{
+  list-style: none;
+}
+/*убрал маркер списка и нижнее подчеркивание у первго элемента меню*/
+.menu-list-item-no-decoration a{
+  text-decoration: none;
+}
+/*настройки размеров логотипа*/
+ .header-logo{
+  display: block;
+  width: 148px;
+  height: 105px;
+  margin-left: 36px;
+}
+/* Сам логотип имел высоту 114px, причину не нашел, нашел решение */
+.header-logo-image{
+  max-height: 105px;
+}
+/* позиционирование и размеры блока контактов */
+.contacts{
+  display: flex;
+  flex-direction: column;
+  width: 241px;
+  margin-left: 184px;
+  line-height: 135%;
+}
+/* Стилизация текста имейла и телефона */
+.contacts-mail, .contacts-tel{
+  letter-spacing: 0.18px;
+}
+/* Размеры позиция фоновой картинки, цвет текста */
+.cover{
+  position: relative;
+  z-index: -1;
+  min-width: 1100px;
+  min-height: 757px;
+  margin-top: 96px;
+  color: #FFF;
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+/* Настройки заголовка */
+.cover-title{
+  z-index: 1;
+  color: #FFF;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+
+}
+/* Темный оверлей */
+.overlay{
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.accent-span {
+  display: block;
+}
+/* Позиционирование первого слова заголовка */
+.text-left{
+  position: relative;
+  top: 165px;
+  left: 50px;
+}
+/* Позиционирование второго слова заголовка */
+.text-center {
+  position: relative;
+  top: 177px;
+  left: 336px;
+}
+/* Позиционирование третьего слова заголовка */
+.text-right {
+  position: relative;
+  top: 182px;
+  left: 633px;
+}
+/* добавление междубуквенного растояния в заголовке */
+.cover-span-ls60{
+  letter-spacing: 60px;
+}
+/* Позиционирование и стилизация текста описания */
+.cover-description{
+  position: relative;
+  top: 322px;
+  left: 78px;
+  z-index: 1;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing: 18.5px;
+}
+/* Позиционирование и стилизация кнопки */
+.cover-button{
+  position: relative;
+  top: 282px;
+  left: 794px;
+  z-index: 1;
+  border:1px solid #FFF;
+  padding: 12px 32px 11px 31px;
+  color: #FFF;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+/* Верхний отступ всей секции */
+.lots{
+  margin-top: 179px;
+}
+/* Стилизация текста заголовка */
+.lots-title{
+  margin-left: 64px;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+/* Позиционирование и отступы блока с карточками */
+.lots-card-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 25px;
+  margin-top: 27px;
+  margin-right: 24px;
+  margin-bottom: 30px;
+  margin-left: 24px;
+  color: #FFF;
+}
+/* Стилизация карточки */
+.lots-card-list-item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 334px;
+  height: 563px;
+}
+/* фоновая картинка первой карточки */
+.card-img-1{
+  position: relative;
+  z-index: -1;
+  background-image: url("../images/card-lot-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+/* фоновая картинка второй карточки */
+.card-img-2{
+  position: relative;
+  z-index: -1;
+  background-image: url("../images/card-lot-02.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+/* фоновая картинка третьей карточки */
+.card-img-3{
+  position: relative;
+  z-index: -1;
+  background-image: url("../images/card-lot-03.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+/* Стилизация ссылки в карточке */
+.lots-card-text a{
+  display: block;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+/* Стилизация текста  в карточке */
+.lots-card-text p{
+  display: block;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 120%;
+
+}
+/* Отступы и позиционирование текста в карточке */
+.lots-card-text{
+  position: relative;
+  z-index: 1;
+  padding: 51px 40px 48px 40px;
+
+}
+/* Стилизация снижней ссылки секции */
+.look-more{
+  display: block;
+  margin-top: 30px;
+  margin-left: 64px;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+}
+/* Отступы секциии создание grid контейнера  */
+.about{
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  margin: 181px 24px 0 24px;
+}
+/* Центрирование логотипа по центру ячейки  */
+.logo-cell{
+  justify-self: center;
+}
+/* Настройки позиционирования и размеров изображения логотипа  */
+.about-logo-cell-img{
+  position: relative;
+  top: 64px ;
+  left: 46px;
+  width: 148px;
+  height: 114px;
+}
+/* Нарисовал Черный круг  */
+.about-logo-cell-rectangle{
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+/* Стилизация заголовка секции  */
+.text-cell-title{
+  padding-top: 101px;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+/* Стилизация текста первого параграфа  */
+.text-cell-description-first-paragraph{
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.2px;
+}
+/* отступ между заголовком и параграфами плюс отступ от логотипа по макету  */
+.text-cell{
+  display: flex;
+  flex-direction: column;
+  gap:100px;
+  margin-left: 27px;
+}
+/* отступ между параграфами  */
+.text-cell-description{
+  display:flex;
+  flex-direction: column;
+  gap: 24px;
+}
+/* Стилизация текста второго параграфа  */
+.text-cell-description-second-paragraph{
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 24px; /* 120% */
+}
+/* Отступы и настройка подвала  */
+.footer{
+  display:flex;
+  justify-content: space-between;
+  margin: 180px 50px 88px 50px;
+}
+/* Стилизация текста и расположения секции с контактами  */
+.contacts-footer{
+  display: flex;
+  flex-direction: column;
+  width: 241px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 135%;
+  line-height: 24.3px; /* 135% */
+  letter-spacing: 0.18px;
+}
+/* Для адреса  */
+.contacts-footer{
+  letter-spacing: normal;
+}
+/* Настройка размеров логотипов  */
+.footer-social-list-item img{
+  width: 48px;
+  height: 48px;
+}
+/* Настройка позиционирования логотипов  */
+.footer-social-list{
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  list-style-type: none;
+}
+/* Позиционирование и стилизация текста у меню в футере  */
+.menu-list-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  list-style-type: none;
+}
+/* убрал подчеркивание в меню у первого элемента  */
+.footer-menu-list-item-no-decoration a{
+  text-decoration: none;
+}
